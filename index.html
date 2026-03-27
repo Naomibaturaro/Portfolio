@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 
@@ -208,6 +208,55 @@ body.light nav {
 body.light .contact a {
   color: #0ea5e9;
 }
+.arcade-preview {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.arcade-preview img {
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+/* Overlay oscuro */
+.arcade-preview .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 6, 23, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.4s;
+  text-align: center;
+  padding: 20px;
+}
+
+.arcade-preview:hover img {
+  transform: scale(1.05);
+}
+
+.arcade-preview:hover .overlay {
+  opacity: 1;
+}
+
+.arcade-preview a {
+  margin-top: 10px;
+  background: #38bdf8;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+}
 
 </style> 
 </head>
@@ -239,10 +288,90 @@ body.light .contact a {
   <p class="disponible">Disponible para proyectos freelance</p>
 </section>
 
+<section class="hidden" style="text-align:center;">
+  <h2>Creo páginas web que convierten visitas en clientes</h2>
+
+  <p style="max-width:700px; margin:20px auto;">
+    Diseño y desarrollo sitios web modernos, rápidos y adaptados a cada negocio. 
+    Desde landing pages hasta páginas completas para emprendedores.
+  </p>
+
+  <a href="https://wa.me/5491130482143" target="_blank" 
+     style="display:inline-block; margin-top:15px; background:#38bdf8; padding:12px 20px; border-radius:10px; color:#000; text-decoration:none;">
+    💬 Pedir mi web
+  </a>
+</section>
+
+<section class="hidden">
+  <h2>Servicios</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Landing Page</h3>
+        <p>Ideal para emprendedores que quieren vender un producto o servicio.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Página Web Completa</h3>
+        <p>Web con múltiples secciones, contacto y diseño profesional.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Rediseño Web</h3>
+        <p>Mejoro tu página actual para que se vea moderna y funcione mejor.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="hidden">
+  <h2>Proyecto Destacado</h2>
+
+  <div class="arcade-preview">
+
+    <img src="images/arcadexperiencie.png" alt="Arcade Experience">
+
+    <div class="overlay">
+      <h3>🎮 Arcade Experience</h3>
+      <p>Landing interactiva con animaciones y estética arcade retro diseñada para captar atención.</p>
+
+      <a href="https://naomibaturaro.github.io/Arcade-Experience/" target="_blank">
+  🚀 Probar experiencia
+</a>
+
+<a href="https://wa.me/5491130482143" target="_blank" style="margin-top:10px; background:#25D366; padding:10px 18px; border-radius:10px; color:#fff; text-decoration:none;">
+  💬 Quiero algo así
+</a>
+
+<p style="margin-top:10px; font-size:14px; color:#94a3b8;">
+  Ideal como landing creativa o experiencia de marca
+</p>
+    </div>
+
+  </div>
+</section>
+
 <section id="proyectos" class="hidden">
   <h2>Proyectos</h2>
 
   <div class="projects">
+
+<div class="card hidden">
+  <img src="images/arcadexperiencie.png">
+  <div class="card-content">
+    <h3>🎮 Arcade Experience</h3>
+    <p>Landing interactiva estilo retro con animaciones.</p>
+    <a href="https://naomibaturaro.github.io/Arcade-Experience/" target="_blank">Ver proyecto</a>
+  </div>
+</div>
+
 
     <div class="card hidden">
       <img src="images/Mompai.png">
